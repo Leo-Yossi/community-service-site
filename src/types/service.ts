@@ -6,12 +6,19 @@ export type ServiceCase = {
   afterLabel?: string;
 };
 
+export type StyleOption = {
+  id: string;
+  title: string;
+  description: string;
+};
+
 export type SubItem = {
   id: string;
   title: string;
   eyebrow: string;
   summary: string;
   cases?: ServiceCase[];
+  styles?: StyleOption[];
 };
 
 export type Service = {

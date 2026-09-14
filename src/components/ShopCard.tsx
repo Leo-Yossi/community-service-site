@@ -18,6 +18,15 @@ export function ShopCard() {
       <p className="shop-card__meta">{shop.community}</p>
       <p className="shop-card__tags">{shop.tags.join(" · ")}</p>
 
+      <div className="shop-card__nearby">
+        <span className="shop-card__nearby-label">靠近</span>
+        {shop.nearby.map((n) => (
+          <span key={n} className="tag-pill">
+            {n}
+          </span>
+        ))}
+      </div>
+
       <div className="shop-card__actions">
         <a className="btn btn--outline" href="#consult">
           <MapPin size={16} /> 到这里

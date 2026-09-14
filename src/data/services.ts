@@ -1,8 +1,9 @@
 import type { Service } from "../types/service";
 
 export const shop = {
-  community: "XX社区 · XX路",
+  community: "湖南路社区",
   tags: ["制衣", "改衣", "养生", "租房"],
+  nearby: ["南京大学", "东南大学", "鼓楼医院", "宁海中学"],
   wechat: "微信同号",
   phone: "13382783933",
 };
@@ -20,12 +21,10 @@ export const services: Service[] = [
         title: "棉毛衫",
         eyebrow: "COTTON",
         summary: "按身形制作的棉毛衫，贴身、舒适、耐穿。",
-        cases: [
-          {
-            id: "cotton-1",
-            title: "棉毛衫定制",
-            note: "根据身高与肩宽调整版型，领口与袖口收口更贴合，穿着不易变形。",
-          },
+        styles: [
+          { id: "cotton-crew", title: "圆领棉毛衫", description: "经典圆领，日常百搭，贴身不紧绷。" },
+          { id: "cotton-turtle", title: "高领棉毛衫", description: "高领护颈，冬季保暖，内搭外穿都合适。" },
+          { id: "cotton-cardigan", title: "开衫棉毛衫", description: "开襟设计，穿脱方便，居家外出行走皆宜。" },
         ],
       },
       {
@@ -33,12 +32,9 @@ export const services: Service[] = [
         title: "保暖内衣",
         eyebrow: "THERMAL",
         summary: "冬季保暖内层，按需定制厚度与长度。",
-        cases: [
-          {
-            id: "thermal-1",
-            title: "保暖内衣定制",
-            note: "按体型调整腰腹与裤腿长度，保暖同时不影响外层穿着。",
-          },
+        styles: [
+          { id: "thermal-thick", title: "加厚保暖内衣", description: "加厚内层，严寒天气也足够暖。" },
+          { id: "thermal-regular", title: "轻薄保暖内衣", description: "轻薄贴身，日常穿着不显臃肿。" },
         ],
       },
       {
@@ -46,12 +42,9 @@ export const services: Service[] = [
         title: "家居服",
         eyebrow: "LOUNGEWEAR",
         summary: "夏季与日常居家服，透气、自在。",
-        cases: [
-          {
-            id: "loungewear-1",
-            title: "家居服定制",
-            note: "选面料与版型，调整领型与衣长，居家穿着更舒服。",
-          },
+        styles: [
+          { id: "lounge-short", title: "短袖家居套装", description: "夏季透气，居家活动更自在。" },
+          { id: "lounge-long", title: "长袖家居套装", description: "秋冬保暖，面料柔软亲肤。" },
         ],
       },
     ],

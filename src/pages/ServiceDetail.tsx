@@ -20,7 +20,7 @@ export function ServiceDetail() {
       <h1 className="page__title">{service.title}</h1>
       <p className="page__intro">{service.intro}</p>
 
-      <SectionTitle eyebrow={service.eyebrow} title="具体项目" />
+      <SectionTitle eyebrow={service.eyebrow} title="具体服务" />
 
       {service.subItems.map((item) => (
         <ItemCard key={item.id} serviceId={service.id} item={item} />
