@@ -1,15 +1,13 @@
 type Props = {
   eyebrow: string;
   title: string;
-  description?: string;
 };
 
-export function SectionTitle({ eyebrow, title, description }: Props) {
+export function SectionTitle({ eyebrow, title }: Props) {
   return (
-    <div className="section-title">
-      <p className="eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
-      {description && <p>{description}</p>}
+    <div className="heading">
+      <p className="heading__label">{eyebrow}</p>
+      <h2 className="heading__title">{title}</h2>
     </div>
   );
 }
